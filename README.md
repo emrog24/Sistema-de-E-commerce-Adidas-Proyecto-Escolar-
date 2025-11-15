@@ -1,21 +1,21 @@
-# 👟 Sistema de E-commerce "Adidas" (Proyecto Escolar)
+# Sistema de E-commerce "Adidas" (Proyecto Escolar)
 
 Proyecto final para la materia de Bases de Datos II. Es una aplicación de escritorio completa desarrollada en **Python** que simula el backend y la interfaz de cliente de un sistema de e-commerce, utilizando **MongoDB** como base de datos NoSQL.
 
 La aplicación está construida en un solo archivo `main.py` usando **Tkinter** para la interfaz gráfica y **PyMongo** para la conexión con la base de datos.
 
-## ✨ Características Principales
+## Características Principales
 
 El sistema se divide en dos módulos principales (Admin y Cliente) con un sistema de autenticación basado en roles.
 
-### 🔐 Autenticación y Generales
+### Autenticación y Generales
 * **Login de Usuario:** Verifica las credenciales contra la colección `A_usuarios`.
 * **Registro de Clientes:** Permite a nuevos usuarios crear una cuenta, que se guarda en `A_usuarios` con `rol: "cliente"` y `estado: "activo"`.
 * **Sistema de Roles:** La aplicación muestra un panel diferente si el usuario es `admin` o `cliente`.
 * **Navegación por Frames:** La aplicación usa una sola ventana raíz (`Tk`) y cambia entre "páginas" (`Frame`) para el login y registro.
 * **Paneles Modales:** Los paneles de Admin y Cliente se abren como nuevas ventanas (`Toplevel`) que, al cerrarse, devuelven al usuario al login.
 
-### 🧑‍💼 Panel de Administrador (CRUD Completo)
+### Panel de Administrador (CRUD Completo)
 Es un panel de 4 pestañas (`ttk.Notebook`) para gestionar toda la tienda:
 
 1.  **Gestionar Productos (`A_productos`):**
@@ -39,7 +39,7 @@ Es un panel de 4 pestañas (`ttk.Notebook`) para gestionar toda la tienda:
 4.  **Ver Órdenes (`A_ordenes`):**
     * **[Read]** Muestra un historial de todas las órdenes, usando **`$lookup`** para mostrar el *email* del cliente. Formatea la fecha (`strftime`) y el total (`:,.2f`).
 
-### 🧑‍💻 Panel de Cliente (Simulación de E-commerce)
+### Panel de Cliente (Simulación de E-commerce)
 Es un panel de 3 pestañas para la experiencia de compra:
 
 1.  **Ver Productos (Tienda):**
@@ -64,7 +64,7 @@ Es un panel de 3 pestañas para la experiencia de compra:
         * **(Req 6.5 - Bonus $push$)** Permite al cliente añadir nuevas direcciones a su arreglo `direcciones` usando **`$push`**.
         * **(Req 6.5 - Bonus $pull$)** Muestra sus direcciones guardadas en una tabla y permite eliminarlas usando **`$pull`**.
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 * **Base de Datos:** MongoDB
 * **Lenguaje:** Python 3
@@ -73,11 +73,11 @@ Es un panel de 3 pestañas para la experiencia de compra:
 * **Manejo de Imágenes:** `Pillow` (PIL)
 * **Descarga de Imágenes:** `requests`
 
-## ⚙️ Instalación y Ejecución
+## Instalación y Ejecución
 
 1.  **Clonar el Repositorio:**
     ```bash
-    git clone [URL_DE_TU_REPO]
+    git clone https://github.com/emrog24/Sistema-de-E-commerce-Adidas-Proyecto-Escolar-
     cd [NOMBRE_DE_TU_CARPETA]
     ```
 
